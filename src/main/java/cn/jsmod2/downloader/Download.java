@@ -25,7 +25,7 @@ public class Download {
             while ((byteRead = stream.read(buffer))!=-1){
                 total += stream.available();
                 have += byteRead;
-                System.out.println("Downloading the JSmod2 ["+total+"/"+total+"]");
+                System.out.println("Downloading the JSmod2 ["+have+"/"+total+"]");
                 stream1.write(buffer,0,byteRead);
             }
             System.out.println("Download Successfully");
